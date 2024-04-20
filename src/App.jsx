@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { TodoForm } from "./assets/components/todo-form/TodoForm";
+// import { TodoForm } from "./assets/components/todo-form/TodoForm";
+import { AddTodo } from "./assets/components/add-todo/AddTodo";
+import { CreateTodo } from "./assets/components/create-todo/CreateTodo";
 
 const App = () => {
   const [todo, setTodo] = useState([
@@ -25,10 +27,12 @@ const App = () => {
       email: "archi@gmail.com",
     },
   ]);
-  console.log(todo);
+  // console.log(todo);
   return (
     <div>
-      <TodoForm />
+      <AddTodo />
+      <CreateTodo todo={todo} setTodo={setTodo}/>
+      {/* <TodoForm /> */}
     </div>
   );
 };

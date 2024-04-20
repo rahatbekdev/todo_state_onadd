@@ -1,0 +1,17 @@
+
+
+.todoHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .todoHeaderBox{
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+} */
