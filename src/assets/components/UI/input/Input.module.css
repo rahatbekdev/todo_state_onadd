@@ -1,0 +1,16 @@
+
+
+
+.firmsInput{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firmsInput input{
+  width: 500px;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 10px;
+  outline: none;
+}

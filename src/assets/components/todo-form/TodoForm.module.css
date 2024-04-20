@@ -1,0 +1,47 @@
+
+
+.formGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todoForms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  background-color: chartreuse;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+}
+.btnOne{
+  cursor: pointer;
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: azure;
+  font-size: 20px;
+}
+.btnOne:hover{
+  background-color: blue;
+  transition: 0.4s;
+}
+.btnTwo{
+  cursor: pointer;
+  width: 500px;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(195, 198, 36);
+  color: black;
+  font-size: 20px;
+}
+.btnTwo:hover{
+  background-color: red;
+  color: white;
+  transition: 0.8s;
+}
