@@ -11,9 +11,31 @@
   justify-content: center;
   align-items: center;
   width: 600px;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+  /* background-image: url('https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/a9bbfa58-b9c5-4002-2f69-5134ccecc300/width=450/Tortles%20(13).jpeg'); */
+  background-image: url("https://cs-go-guide.ru/wp-content/uploads/2024/02/cs-1-6-mansion-rush.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border: 2px solid goldenrod;
   border-radius: 10px;
+}
+.todoForms input{
+  cursor: pointer;
+  /* border: none; */
+  border: 2px solid silver;
+  padding-left: 10px;
+  font-size: 20px;
+  background-color: rgb(0,0,0,0.4);
+}
+.todoForms input:hover{
+  background-color: rgb(0,0,0,0.6);
+  /* transition: 0.6s; */
+}
+.todoForms label{
+  color: white;
+  font-size: 20px;
 }
 .btnOne{
   cursor: pointer;
@@ -28,6 +50,7 @@
 .btnOne:hover{
   background-color: blue;
   transition: 0.4s;
+  font-size: 25px;
 }
 .btnTwo{
   cursor: pointer;
@@ -44,4 +67,5 @@
   background-color: red;
   color: white;
   transition: 0.8s;
+  font-size: 25px;
 }
