@@ -1,13 +1,15 @@
-// import style from "TodoItem.module.css";
+import style from "./TodoItem.module.css";
 import PropTypes from "prop-types";
 
 export const TodoItem = ({ name, title, phone, email }) => {
   return (
-    <div>
+    <div className={style.f5}>
       <p>{name}</p>
       <p>{title}</p>
-      <p>{phone}</p>
-      <p>{email}</p>
+      <div>
+        <p>{phone}</p>
+        <p>{email}</p>
+      </div>
     </div>
   );
 };
