@@ -2,24 +2,24 @@
 import PropTypes from "prop-types";
 import { TodoItem } from "../todo-item/TodoItem";
 
-export const CreateTodo = ({ todo }) => {
+export const CreateTodo = ({ data }) => {
   return (
-    <div>
-      {todo.map((item) => {
+    <ul>
+      {data.map((item) => {
         return (
           <TodoItem
             key={item.id}
             name={item.name}
             title={item.title}
-            phone={parseInt(item.phone)}
+            phone={item.phone}
             email={item.email}
           />
         );
       })}
-    </div>
+    </ul>
   );
 };
 
 CreateTodo.propTypes = {
-  todo: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired,
 };

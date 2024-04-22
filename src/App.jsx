@@ -27,11 +27,19 @@ const App = () => {
       email: "archi@gmail.com",
     },
   ]);
+
+  const onAddTodo = (data) => {
+
+    const NewText=[...todo,data]
+    setTodo(NewText)
+    
+    
+  };
   // console.log(todo);
   return (
     <div>
-      <AddTodo />
-      <CreateTodo todo={todo} setTodo={setTodo}/>
+      <AddTodo onAdd={onAddTodo} />
+      <CreateTodo data={todo} />
       {/* <TodoForm /> */}
     </div>
   );

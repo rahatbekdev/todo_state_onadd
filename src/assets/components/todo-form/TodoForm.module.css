@@ -31,8 +31,13 @@
 }
 .todoForms input:hover{
   background-color: rgb(0,0,0,0.6);
+  color: white;
   /* transition: 0.6s; */
 }
+.todoForms div input::placeholder{
+  color: red;
+}
+
 .todoForms label{
   color: white;
   font-size: 20px;

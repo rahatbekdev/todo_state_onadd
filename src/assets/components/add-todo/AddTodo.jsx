@@ -4,10 +4,12 @@ import { useState } from "react";
 import { Button } from "../UI/button/Button";
 import { TodoForm } from "../todo-form/TodoForm";
 
-export const AddTodo = () => {
+// eslint-disable-next-line react/prop-types
+export const AddTodo = ({onAdd}) => {
   const [add, setAdd] = useState(false);
 
-  const todoClick = () => {
+  const todoClick = (event) => {
+    event.preventDefault();
     setAdd((prev) => !prev);
   };
   return (
@@ -15,7 +17,7 @@ export const AddTodo = () => {
       <div className={style.todoHeaderBox}>
         {/* <h1>Your TO-DO LIST...</h1> */}
         {add ? (
-          <TodoForm closeForm={todoClick} />
+          <TodoForm closeForm={todoClick} onAdd={onAdd}/>
         ) : (
           <Button onClick={todoClick} text="add todo" />
         )}

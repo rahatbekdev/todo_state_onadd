@@ -17,6 +17,6 @@ export const TodoItem = ({ name, title, phone, email }) => {
 TodoItem.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
-  phone: PropTypes.number,
+  phone: PropTypes.string,
   email: PropTypes.string,
 };
